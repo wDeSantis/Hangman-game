@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jeupendu.FXMLDocumentController">
+   <children>
+      <Label layoutX="297.0" layoutY="14.0" text="Jeu du Pendu">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="85.0" text="Points:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPointage" layoutX="550.0" layoutY="88.0" prefHeight="20.0" prefWidth="47.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="hButton" layoutX="269.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="H" />
+      <TextField fx:id="textfieldNomJoueur" layoutX="539.0" layoutY="16.0" />
+      <Canvas fx:id="canvasPoteau" height="313.0" layoutY="11.0" width="230.0" />
+      <Button fx:id="btnDebutJeu" layoutX="522.0" layoutY="149.0" mnemonicParsing="false" onAction="#débuterJeu" prefHeight="25.0" prefWidth="129.0" text="Débuter le Jeu" />
+      <Label fx:id="labelNomJoueur" layoutX="493.0" layoutY="47.0" prefHeight="41.0" prefWidth="196.0" wrapText="true" />
+      <Label fx:id="labelDescriptifNomJoueur" layoutX="432.0" layoutY="19.0" text="Nom du joueur:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMotCaché" alignment="CENTER" layoutX="234.0" layoutY="260.0" prefHeight="48.0" prefWidth="242.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="41.0" />
+         </font></Label>
+      <Button fx:id="btnQuitter" layoutX="560.0" layoutY="216.0" mnemonicParsing="false" text="Quitter" />
+      <Button fx:id="btnNouvellePartie" layoutX="522.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Nouvelle Partie" />
+      <Button fx:id="bButton" layoutX="269.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="B" />
+      <Button fx:id="cButton" layoutX="315.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="C" />
+      <Button fx:id="iButton" layoutX="315.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="I" />
+      <Button fx:id="dButton" layoutX="362.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="D" />
+      <Button fx:id="jButton" layoutX="362.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="J" />
+      <Button fx:id="eButton" layoutX="407.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="E" />
+      <Button fx:id="kButton" layoutX="407.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="K" />
+      <Button fx:id="mButton" layoutX="224.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="M" />
+      <Button fx:id="nButton" layoutX="269.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="N" />
+      <Button fx:id="oButton" layoutX="315.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="O" />
+      <Button fx:id="lButton" layoutX="454.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="L" />
+      <Button fx:id="aButton" layoutX="224.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="A" />
+      <Button fx:id="gButton" layoutX="224.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="G" />
+      <Button fx:id="fButton" layoutX="454.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="F" />
+      <Button fx:id="pButton" layoutX="362.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="P" />
+      <Button fx:id="qButton" layoutX="407.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="Q" />
+      <Button fx:id="rButton" layoutX="454.0" layoutY="394.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="R" />
+      <Button fx:id="sButton" layoutX="224.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="S" />
+      <Button fx:id="tButton" layoutX="269.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="T" />
+      <Button fx:id="uButton" layoutX="315.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="U" />
+      <Button fx:id="vButton" layoutX="362.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="V" />
+      <Button fx:id="wButton" layoutX="407.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="W" />
+      <Button layoutX="454.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="X" fx:id="xButton" />
+      <Button fx:id="yButton" layoutX="315.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="Y" />
+      <Button fx:id="zButton" layoutX="362.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="Z" />
+      <Pane fx:id="paneRegle" layoutX="22.0" layoutY="325.0" prefHeight="71.0" prefWidth="186.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label fx:id="labelRegle1" layoutX="-1.0" layoutY="2.0" prefHeight="28.0" prefWidth="186.0" text="Règles :">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRegle2" layoutY="22.0" prefHeight="28.0" prefWidth="186.0" text="Lettre trouvée = +1 point">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRegle3" layoutX="-1.0" layoutY="43.0" prefHeight="28.0" prefWidth="186.0" text="Mot complet = +5 points">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneInstructions" layoutX="499.0" layoutY="320.0" prefHeight="131.0" prefWidth="196.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label fx:id="labelInstructions1" layoutY="-2.0" prefHeight="25.0" prefWidth="200.0" text="Bienvenue dans le jeu du pendu!">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelInstructions2" layoutY="23.0" prefHeight="25.0" prefWidth="200.0" text="Voici comment jouer :">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelInstructions3" layoutY="48.0" prefHeight="25.0" prefWidth="200.0" text="-Devinez le mot caché en ">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelInstructions4" layoutY="68.0" prefHeight="25.0" prefWidth="200.0" text="proposant des lettres">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelInstructions5" layoutY="87.0" prefHeight="25.0" prefWidth="200.0" text="-Gagnez en devinant le mot ">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelInstructions6" layoutX="-2.0" layoutY="106.0" prefHeight="20.0" prefWidth="200.0" text="-Perdez en faisant trop d'erreurs ">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
